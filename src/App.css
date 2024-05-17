@@ -26,7 +26,7 @@ body, html {
 .App-header {
   background-color: #1f3b60; /* Dark blue background for the header */
   color: white;
-  padding: 10px 5px; /* Consistent padding */
+  padding: 0px 5px; /* Reduced top padding */
   display: flex;
   align-items: center; /* Vertically center the contents of the header */
   justify-content: space-between; /* Space out the logo and the navigation */
@@ -35,6 +35,14 @@ body, html {
   width: 100%; /* Ensures the header spans the full width of the viewport */
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-logo {
+  height: 40px; /* Ensures logo height is consistent */
+  width: auto; /* Maintains the aspect ratio of the logo */
+  margin-right: 1px; /* Right margin for spacing between logo and title */
+  margin-top: 0px; /* Ensures no extra space above the logo */
+  vertical-align: middle; /* Aligns logo with the text vertically */
 }
 
 /* Navigation styling */
@@ -47,7 +55,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 8px;
 }
 
 .nav-button {

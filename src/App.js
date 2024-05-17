@@ -6,19 +6,21 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import "./App.css";
+import logo from "./pages/logo.png";
 
 const App = () => {
   const modelPaths = [
-    "/models/room.glb",
     "/models/kitchen.glb",
     "/models/living_room.glb",
     "/models/dining.glb",
+    "/models/neon_bedroom.glb",
   ];
 
   return (
     <Router>
       <div className="App">
         <header className="App-header">
+          <img src={logo} alt="Logo" className="App-logo" />
           <h1 className="App-title">forREAL-Your Dream Home Awaits</h1>
           <nav>
             <ul>
