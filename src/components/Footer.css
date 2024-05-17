@@ -1,0 +1,45 @@
+/* Update the footer styles to reduce its overall height */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1px; /* Adjust the padding to reduce the overall height */
+    background-color: #1f3b60;
+    color: white;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 100px; /* Reduce the min-width of each section */
+    margin: 2px; /* Add some margin to separate sections */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1px; /* Increase the margin between headings and content */
+  }
+  
+  .footer-section p {
+    margin: 1px 0; /* Adjust the margin for paragraphs */
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1px; /* Increase the margin for the bottom section */
+    width: 100%;
+  }
+  
+  .main-content {
+    padding-bottom: 1px; /* Adjust this value based on the reduced footer height */
+  }
+  

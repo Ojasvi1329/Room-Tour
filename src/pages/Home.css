@@ -1,0 +1,44 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 70px; /* Compensate for the header's height */
+  position: relative;
+}
+
+.App-header {
+  background-color: white;
+  color: white;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Ensure it's above other content */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+}
+
+/* Home.css adjustments for the carousel */
+/* Home.css */
+
+.carousel {
+  width: calc(100% - 40px); /* Consistent calculation for both width and max-width */
+  max-width: calc(100% - 40px);
+  margin: 20px; /* Uniform margin */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-image {
+  width: 150%; /* Enlarge image width by 20% */
+  height: 96%; /* Enlarge image height by 20% to maintain aspect ratio */
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add transition for smooth scaling */
+  transform: scale(1.2); /* Scale image by 20% */
+}
